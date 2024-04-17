@@ -1,0 +1,99 @@
+:root {
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --blue-1: #62b8f5;
+    --blue-2: #4475ef;
+    --shadow: rgba(3, 46, 87, 0.2);
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/3008509/pexels-photo-3008509.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow);
+    color: #051933;
+    text-align: center; /* Centers all text inside the container */
+}
+
+h1 {
+    margin: 1rem;
+    font-weight: 800; /* Makes the text bolder */
+}
+h2, h3, p {
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input {
+    flex: 1;
+    padding: 0.8rem;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #4475ef;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+.icon img {
+    width: 100%;
+    max-width: 100px; /* Adjust according to your needs */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .weather {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        margin: 0 0 10px 0;
+    }
+}
