@@ -18,7 +18,7 @@
     style="background-image: url('{{ image_url }}');"
     {% endif %}>
     <div class="container">
-        <h1>Weather App</h1>
+        <h1> Weather App</h1><br>
         <form method="post">
             {% csrf_token %}
             <input type="text" name="city" placeholder="Enter City Name">
@@ -44,7 +44,7 @@
 {% if exp_occured %}
 <script>
     window.onload=function(){
-        alert("City not found. Please check the spelling or not available in the API.");
+        alert("correct the spelling mistake.");
     }
 </script>
 {% endif %}

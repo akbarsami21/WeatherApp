@@ -8,7 +8,7 @@ def home(request):
     if request.method=='POST':
         city=request.POST['city']
     else:
-        city='chittagong'
+        city='Chittagong'
 
     url=f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=242a3bcda8c794f760ba0b05bf2f61f4'
 
@@ -20,12 +20,13 @@ def home(request):
     page=1
     start=(page-1) * 10 + 1
     searchType='image'
-    city_url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={query}&start={start}&searchType={searchType}&imgSize=xlarge"
-    data=requests.get(city_url).json()
-    count=1
-    search_items=data.get('items')
-    image_url=search_items[1]['link']
     try:
+        city_url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={query}&start={start}&searchType={searchType}&imgSize=xlarge"
+        data=requests.get(city_url).json()
+        count=1
+        search_items=data.get('items')
+        image_url=search_items[1]['link']
+    
         data=requests.get(url,PARAMS).json() #send request in api
         description=data['weather'][0]['description']
         icon=data['weather'][0]['icon']
@@ -37,6 +38,6 @@ def home(request):
         exp_occured=True
         messages.error(request,'City not found. Please check the spelling or not available in the API.')
         day=datetime.date.today()
-        return render(request,'home.html',{'description':'clear sky','icon':'01d','temp':25,'day':day,'city':'chittagong','exp_occured':False})
+        return render(request,'home.html',{'description':'Clear with periodic clouds','icon':'04n','temp':13,'day':day,'city':'Kazan ','exp_occured':exp_occured})
 
 
