@@ -14,8 +14,8 @@ def home(request):
 
     #This is a dictionary containing additional parameters to send in the request
     PARAMS={'units':'metric'}  #celcius 
-    API_KEY='AIzaSyCPlRfR_OSbbzJdmM-yN2s7-pIGMboNy3Y'
-    SEARCH_ENGINE_ID='510e1cf282a614fb9'
+    API_KEY=''
+    SEARCH_ENGINE_ID=''
     query=city + '1920x1080'
     page=1
     start=(page-1) * 10 + 1
