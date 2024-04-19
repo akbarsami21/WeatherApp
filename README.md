@@ -27,6 +27,24 @@
 </ul>
 <h2>Output</h2>
 
+![Tokyo](https://github.com/akbarsami21/WeatherApp/assets/109865799/8b6c75bf-8e81-449b-8631-1487bfe97f38)
 
+<h4 align="center">Tokyo</h4>
+
+![NewYork](https://github.com/akbarsami21/WeatherApp/assets/109865799/7355eeae-9bff-48fa-a22c-5d48f856d325)
+
+<h4 align="center">New York</h4>
+
+![Moscow](https://github.com/akbarsami21/WeatherApp/assets/109865799/e794e30e-0ee8-4ae3-9084-8cd95edb22cf)
+
+<h4 align="center">Moscow</h4>
+
+![Dubai](https://github.com/akbarsami21/WeatherApp/assets/109865799/60b864b2-11b5-46fb-8fd0-159d5095c10c)
+
+<h4 align="center">Dubai</h4>
+
+![Beijjing](https://github.com/akbarsami21/WeatherApp/assets/109865799/19ef850b-2774-4e30-b1e5-7d91be0139b2)
+
+<h4 align="center">Beijjing</h4>
 
 
